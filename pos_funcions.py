@@ -1,4 +1,6 @@
 #pos_fincions
+from pos_python.pos_python import contado
+from pos_python.pos_python import categoria
 from pos_python.pos_python import productos
 productos = {}
 
@@ -23,10 +25,20 @@ def buscar_producto():
             print(f'Dtealles de producto: {productos [b_nombre]}')
 
 def inventario_productos():
-    print('inventario de productos')
+    if opcion == 3:
+        print('Inventario de productos por categoria')
+        i_categoria = str(input('Categoria a inventariar:' ))
+        if i_categoria in productos:
+            i_codigo = str(input('Codigo de producto encontrado'))
+            if i_codigo in [productos] [categoria]:
+                contado = []
+                suma = 0
 
 def ver_productos():
-    print('Mostrando todos los productos')
+    if opcion == 4:
+        print('Mostrando todos los productos')
+        for i in productos:
+            print (productos[i])
 
 def venta_producto():
     print('Vendiendo producto')
