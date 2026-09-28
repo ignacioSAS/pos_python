@@ -1,4 +1,6 @@
 #pos_fincions
+from pos_python.pos_python import nombre
+from pos_python.pos_python import cantidad
 from pos_python.pos_python import contado
 from pos_python.pos_python import categoria
 from pos_python.pos_python import productos
@@ -24,7 +26,7 @@ def buscar_producto():
         if b_nombre in productos:
             print(f'Dtealles de producto: {productos [b_nombre]}')
 
-def inventario_productos():
+def inventario_productos(): #incompleto
     if opcion == 3:
         print('Inventario de productos por categoria')
         i_categoria = str(input('Categoria a inventariar:' ))
@@ -42,6 +44,17 @@ def ver_productos():
 
 def venta_producto():
     print('Vendiendo producto')
+    v_producto = str(input('Nombre de producto a vender: '))
+    if v_producto in productos:
+        v_cantidad = int(input('Cantidad a vender: '))
+        if v_cantidad <= cantidad:
+            cantidad = cantidad - v_cantidad
+            #productos [v_producto][1] = [cantidad]
+            print(f'Has vendido {v_cantidad} de {nombre} ahora cuentas con {cantidad}')
+        else:
+            print('La cantidad de producto en venta exede el producto disponible')
+    else:
+        print(f'El producto {v_producto} no se encuentra en el inventario')
 
 def compra_producto():
     print('Comprando producto')
