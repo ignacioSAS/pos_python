@@ -30,9 +30,8 @@ while True:
   
   elif respuesta == 3:
     b_categoria = str(input('Categoria a consultar: '))
-    print(f'Productos en la categoria {b_categoria}')
-    for i in productos:
-      print(nombre)
+    print(f'Productos en la categoria: {b_categoria}')
+    print(nombre)
 
 '''
   elif respuesta ==3: #modificar para inventario por categoria
