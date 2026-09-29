@@ -24,19 +24,19 @@ while True:
     print(productos)
 
   elif respuesta == 2:
-    search=str(input('Nombre del producto a buscar: '))
-    if search in productos:
+    b_nombre=str(input('Nombre del producto a buscar: '))
+    if b_nombre in productos:
       print(f'Detalles de producto {productos[nombre]}')
   
-  elif respuesta == 3:
+  elif respuesta == 3: #incompleta solo entra a la ultima ctegoria creada
     b_categoria = str(input('Categoria a consultar: '))
-    print(f'Productos en la categoria: {b_categoria}')
-    print(nombre)
+    if b_categoria == categoria:
+      print(f'La categoria {b_categoria} si se encuentra en la base de datos')
+      print(nombre)
+    else:
+      print('La categoria seleccionada no se encuentra')
 
 '''
-  elif respuesta ==3: #modificar para inventario por categoria
-    search=str(input('Producto a inventariar: '))
-    if search in productos:
       contado=[]
       suma=0
       while contado != cantidad:
@@ -57,8 +57,8 @@ while True:
             print(f'valor de inventario {suma*costo }')
             break
     else:
-      print(f'El producto {search} no se encuentra en tu inventario')'''
-'''
+      print(f'El producto {b_categoria} no se encuentra en tu inventario')
+
   elif respuesta == 4:
     for i in productos:
       print(productos[i])
