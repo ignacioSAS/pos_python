@@ -1,0 +1,68 @@
+Agregar nuevo producto.
+    id_producto
+    nombre de producto
+    precio venta
+    costo compra
+    cantidad de producto
+    categoria de producto
+    id_proveedor } id_proveedor/proveedor
+
+Crear empleado.
+    id_empledo
+    nombre_empleado
+    telefono_empleado
+    fecha_incio
+    fecha_recesion
+
+Crear proveedor.
+    id_proveedor
+    nombre_empresa
+    email
+    telefono_empresa
+
+Orden compra.
+    id_ordencompra
+    id_empledo
+    id_proveedor
+    fecha
+
+Realizar compra.
+    id_compra
+    id_ordencompra } id_ordencompra/Orden compra
+    id_empledo
+    id_proveedor
+    id_producto
+    cantidad
+
+Realizar venta.
+    id_venta
+    id_producto
+    id_empledo
+    cantidad
+    fecha
+
+Inventario.
+    producto
+    categoria
+
+Reportes
+    ventas
+        dia
+        semana
+        mes
+        fecha
+        producto
+        categoria
+
+    compras
+        dia
+        semana
+        mes
+        fecha
+        proveedor
+
+Proveedores
+    id proveedor 
+    nombre empresa
+    contacto
+    
