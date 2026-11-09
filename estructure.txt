@@ -8,14 +8,14 @@ Agregar nuevo producto.
     id_proveedor } id_proveedor/proveedor
 
 Crear empleado.
-    id_empledo
+    id_empledo //id start 1001
     nombre_empleado
     telefono_empleado
     fecha_incio
     fecha_recesion
 
 Crear proveedor.
-    id_proveedor
+    id_proveedo //id start 5001r
     nombre_empresa
     email
     telefono_empresa
